@@ -1,17 +1,16 @@
-
 //"function" <functionName> (<functionParams>) ( : <return type> )
-
-function printState (v : any) {
+function printState(v) {
     if (v.issuedState !== undefined) {
         console.log(v.issuedState);
-    } else if (v.state !== undefined) {
+    }
+    else if (v.state !== undefined) {
         console.log(v.state);
-    } else if (v.startte !== undefined) {
+    }
+    else if (v.startte !== undefined) {
         console.log(v.startte);
     }
 }
-
-let dl = {
+var dl = {
     "issuedState": "Pennsylvania",
     "driversLicenseNumber": "99 999 999",
     "lastName": "Sample",
@@ -25,19 +24,18 @@ let dl = {
     },
     "organDonor": true,
     "dups": "00"
-} ;
-
-let dl2 = {
+};
+var dl2 = {
     "state": "Ohio",
-    "dlNumber" : "121234 434",
-    "LastName" : "Smith",
-    "first_name" : "Anna",
-    "addr" : {
-        "s1" : "123 Easy  St",
-        "s2" : "Apt. 2",
-        "s3" : "all wrong",
-        "city" : "Columbus",
-        "state" : "Ohio",
-        "zip" : 90210
+    "dlNumber": "121234 434",
+    "LastName": "Smith",
+    "first_name": "Anna",
+    "addr": {
+        "s1": "123 Easy  St",
+        "s2": "Apt. 2",
+        "s3": "all wrong",
+        "city": "Columbus",
+        "state": "Ohio",
+        "zip": 90210
     }
-}
+};
